@@ -1,0 +1,646 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0px;
+	background-color: #BA96C4;
+	overflow-x: hidden;
+}
+
+p,h1, h2
+{color: white;}
+
+.purplediv{
+	border: solid green;
+	height: 400px;
+	background-color: #321c59;
+}
+
+.purpledivmin{
+	height: 100px;
+	background-color: #321c59;
+	margin-bottom: 100px;
+}
+
+.navMenu{
+    width: auto;
+    margin: 0;
+    background-color: #BA96C4;
+    position: static;
+    top: 0px;
+	padding-top: 0px;
+	z-index:1000;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+nav ul{
+    list-style-type: none;
+	display: flex;
+    justify-content: center;
+	margin-top: 0px;
+}
+
+nav ul li{
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+	border: solid purple 1px;
+	background-color: rgba(152, 102, 176, 1);
+	width: 200px;
+	border-radius: 32px;
+    margin-left: 10px;
+}
+
+nav a:hover{
+    color: white;
+	font-size: 15px;
+    border-bottom: 2px solid white;
+}
+/*------------------------------------------Ul sous categorie*/
+.sous{
+    display: none;
+    background-color: none;
+    position: absolute;
+	/*border: solid black 2px;*/
+	width:auto;
+	z-index: 10000;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+	/*border: solid 3px blue;*/
+	justify-content: center;
+	padding: 0px;
+
+}
+
+.sous li{
+    float: none;
+    text-align: center;
+	/*border: solid green 2px;*/
+	width: 100%;
+}
+.sous a{
+    border-bottom: none;
+	background-color: white;
+	color: black;
+	border: solid 2px rgba(152, 102, 176, 1);
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    /*content:" ▼";*/
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+border: solid green;
+}
+
+
+/*-------------------------------------------- photo acceuil ----------------------------------------------------*/
+
+.imageacceuil{
+	/*width: 100%;*/
+}
+
+.imga{
+	margin-top: 10px;
+	object-fit: cover;
+	width: 100%;
+	height: 500px;
+}
+
+/* texte photo acceuil */
+
+.txtimgaccueil{
+	/*position: static;
+	top: 1000px;
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-size: 36px;
+	font-weight: bold;
+	position: absolute;
+	top: 200px;
+	margin-left: 25%;
+	margin-right: 25%;
+	z-index: 2;*/
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	top: -300px;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	text-shadow:1px 1px 2px black ;
+}
+
+.divimgacceuil{
+	margin-top: 150px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+.imgacceuil{
+	object-fit: contain;
+    width: 70%;
+}
+
+/*--------------------------------------------texte acceuil-------------------------------------------------*/
+
+.about{
+	display: flex;
+	flex-direction: column;
+	justify-content:center ;
+	margin: 0px;
+	padding: 0px;
+	width: 800px;
+	 margin-left: auto;
+  margin-right: auto;
+	
+}
+
+.h2acceuil{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 32px;
+}
+
+.texteacceuil{
+	text-align: justify;
+	width: 100%;
+}
+
+
+/*------------------------------------------------------caroussel acceuil ----------------------------------------*/
+
+
+
+/*--------------------------------------------------------yamouna--------------------------------------------*/
+#navMenuYamouna a{
+	background-color: #9866B0;
+	color: white;
+	border: solid 1px #6D2E8A;
+}
+#yamounah2acceuil{
+	margin-top: 200px;
+	text-align: center;
+	color: white;
+}
+
+.h2moodboard{
+	color: white;
+	text-align: center;
+	margin-top: 100px;
+
+}
+
+.h2creationyamouna{
+	color: white;
+	text-align: center;
+	margin-top: 100px;
+
+}
+
+.mockupyamouna{
+	text-align: center;
+	margin-top: 100px;
+
+}
+
+.divmockupyamouna{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.cartemockup{
+	object-fit: cover;
+    height: 400px;
+	margin-left: 50px;
+}
+
+
+/*---------------------------------------------------------ecole brisset ---------------------------------------------*/
+
+.brissetBody{
+	margin: 0;
+	width: auto;
+}
+
+#carousseltext{
+	margin-top: 100px;
+	text-align: center;
+}
+
+.carousel1{
+ display: grid;
+ /* grid-template-rows: 800px 100px;*/
+grid-template-columns: 50% 30px 30px 30px 50%;
+align-items: center;
+justify-items: center;
+justify-content: center;
+}
+main#carousel {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+}
+
+div.item {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-color: coral;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item:nth-of-type(1) {
+  --offset: 1;
+  background-color: #90f1ef;
+}
+div.item:nth-of-type(2) {
+  --offset: 2;
+  background-color: #ff70a6;
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+  background-color: #ff9770;
+}
+
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ main#carousel {
+  --position: 1;
+}
+
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+  --position: 2;
+}
+
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+  --position: 3;
+} 
+
+
+.briefbrisset{
+width: 100%;
+height: 100%;
+}
+
+.brisset{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-top: 100px;
+}
+
+#moodboardbrissetimg{
+	width: 50%;
+	margin: auto;
+	background-color: white;
+	padding-left: 90px;
+	padding-right: 70px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.propal{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 100px;
+	
+}
+
+#propallogo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.brissetlogos{
+    height: 250px;
+    object-fit: cover;
+	margin: 35px;
+}
+
+.propaltexte{
+	height: 230px;
+	text-align: justify;
+	margin: 30px;
+	
+}
+
+.brissetselect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+	margin-top: 100px;
+}
+
+.selectlogo{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoselect, #logodeclinaison{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    text-align: center;
+}
+
+.chartebrissetdiv{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chartebrissetpdf{
+	border: none;
+	background-color:#BA96C4;
+}
+
+.brissetpdf{
+	width: 90%;	
+}
+
+
+/*----------------------------------------------------------------Volet-system---------------------------------------------------*/
+.voletsystem{
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	margin-top: 100px;
+	align-items: center;
+	text-align: justify;
+}
+
+.presentationigerie{
+	width: 90%;
+	margin: auto;
+	
+}
+
+.textvoletsystem{
+	width: 50%;
+	margin-top: 50px;
+	
+}
+
+.docrollerimg{
+    object-fit: fill;
+    width: 500px;
+    height: 300px;
+    /* margin: auto; */
+    align-self: center;
+}
+
+#photovoletsystem{
+	border: solid green 5px;
+}
+
+.divimgvoletsyetm{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgigerie{
+    height: 300px;
+	width: 400px;
+    object-fit: contain;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.imgigerie2{
+	width: 800px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.h1igerie{
+	margin-top:200px ;
+}
+
+.flexigerierow{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.flexigerierow2{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 40%
+}
+
+.textvoletsystem2{
+	width: 58%;
+}
+
+.flextextlogo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 99%;
+}
+
+.textelogo{
+margin-right: 20px;
+	margin-left: 20px;
+}
+
+.igeriepdf{
+	width: 80%;
+}
+
+/*----------------------------------------------------------------La tasse enchantée---------------------------------------------*/
+.tasseimga{
+	display: flex;
+    object-fit: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 200px;
+}
+.tasseimg{
+    width: 50%;	
+}
+
+.imagetasse{
+	object-fit: cover;
+	width: 60%;
+	margin-bottom: 100px;
+}
+
+.imglogotasse{
+	width: 30%;
+	background-color: white;
+	padding: 30px;
+}
+
+.imgmockuptasse{
+	object-fit: cover;
+    width: 50%;
+	margin-bottom: 100px;
+}
+
+.imgmockuptassediv{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.imgmockupt{
+	object-fit: cover;
+	width: 20%;
+	background-color: white;
+	margin-bottom: 200px;
+}
+
+.pcenter{
+	text-align: center;
+}
+
+.pcenter2{
+	width: 60%;
+}
+#attendutasse{
+	width: 80%;
+    text-align: justify;
+    margin: auto;
+}
+
+#usetasse{
+	width: 80%;
+    text-align: justify;
+    margin: auto;
+	margin-top: 100px;
+	margin-bottom: 200px;
+
+}
+
+/*----------------------------------------------------------------Illustration---------------------------------------------*/
+.illustrationdiv{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.illimg{
+	width: 80%;
+}
+
+.illimgmin{
+	width: 40%;
+}
+
+.illutext{
+	margin-bottom: 100px;
+}
+
+.h2illu{
+	text-align: center;
+}
+
+/*----------------------------------------------------------------Candeur Cyclone---------------------------------------------*/
+.mockupCC{
+	object-fit: cover;
+	height: 40%;
+	width: 40%;
+	margin: auto;
+}
+
+/*----------------------------------------------------------------Contact---------------------------------------------*/
+.acontact{
+	text-decoration: none;
+	color: white;
+	font-size: 20px
+}
+
+.contactdiv{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*----------------------------------------------------------------Photo---------------------------------------------*/
+.h1photo{
+	text-align: center;
+}
+.divphoto{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.photo{
+	margin-bottom: 100px;
+	width: 400px;
+}
