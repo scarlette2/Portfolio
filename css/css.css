@@ -12,12 +12,12 @@ p,h1, h2
 .purplediv{
 	border: solid green;
 	height: 400px;
-	background-color: #321c59;
+	background-color: #BA96C4;
 }
 
 .purpledivmin{
 	height: 100px;
-	background-color: #321c59;
+	background-color: #BA96C4;
 	margin-bottom: 100px;
 }
 
@@ -226,6 +226,8 @@ border: solid green;
 .mockupyamouna{
 	text-align: center;
 	margin-top: 100px;
+	margin-bottom: 0;
+
 
 }
 
@@ -234,6 +236,7 @@ border: solid green;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	height: 250px;
 }
 
 .cartemockup{
@@ -490,6 +493,13 @@ height: 100%;
 	justify-content: center;
 }
 
+.flexigeriecol{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .flexigerierow2{
 	display: flex;
 	flex-direction: row;
@@ -498,7 +508,7 @@ height: 100%;
 }
 
 .textvoletsystem2{
-	width: 58%;
+	width: 400px;
 }
 
 .flextextlogo{
@@ -608,10 +618,28 @@ margin-right: 20px;
 }
 
 /*----------------------------------------------------------------Candeur Cyclone---------------------------------------------*/
+.candeurcyclone{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .mockupCC{
 	object-fit: cover;
 	height: 40%;
 	width: 40%;
+	margin: auto;
+	margin-top: 100px;
+
+}
+
+.CCh1txt{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
 	margin: auto;
 }
 
