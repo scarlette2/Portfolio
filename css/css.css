@@ -6,6 +6,11 @@ body{
 	overflow-x: hidden;
 }
 
+.footer{
+	height: 200px;
+	
+}
+
 p,h1, h2
 {color: white;}
 
